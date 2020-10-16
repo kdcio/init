@@ -1,0 +1,27 @@
+{
+  "name": "@kdcio/init",
+  "version": "1.0.0",
+  "description": "Initialize KDC Projects with npm & git. Security included!",
+  "main": "src/index.js",
+  "bin": "./cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "init",
+    "initialize",
+    "git",
+    "secret",
+    "security",
+    "npm",
+    "kdc",
+    "kdcio",
+    "kdcsoftware"
+  ],
+  "author": {
+    "name": "Ian Dela Cruz",
+    "email": "ian@kdcsoftware.com",
+    "url": "https://www.kdcsoftware.com"
+  },
+  "license": "MIT"
+}
