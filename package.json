@@ -10,7 +10,9 @@
     "kdc-init": "dist/index.js"
   },
   "scripts": {
-    "build": "rollup -c"
+    "start": "node dist/index.js",
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "keywords": [
     "init",
@@ -44,6 +46,10 @@
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.1.2",
     "rollup": "^2.32.0",
-    "rollup-plugin-terser": "^7.0.2"
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-visualizer": "^4.1.1"
+  },
+  "dependencies": {
+    "commander": "^6.1.0"
   }
 }

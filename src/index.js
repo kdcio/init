@@ -1,7 +1,3 @@
-import { install } from './gpg';
+import { start } from './cli';
 
-async function run() {
-  install();
-}
-
-run();
+start();
