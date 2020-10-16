@@ -1,11 +1,16 @@
 {
   "name": "@kdcio/init",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Initialize KDC Projects with npm & git. Security included!",
-  "main": "src/index.js",
-  "bin": "./cli.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js"
+  ],
+  "bin": {
+    "kdc-init": "dist/index.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c"
   },
   "keywords": [
     "init",
@@ -23,5 +28,22 @@
     "email": "ian@kdcsoftware.com",
     "url": "https://www.kdcsoftware.com"
   },
-  "license": "MIT"
+  "private": "false",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "eslint": "^7.11.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.13.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "rollup": "^2.32.0",
+    "rollup-plugin-terser": "^7.0.2"
+  }
 }
