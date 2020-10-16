@@ -1,3 +1,4 @@
 import { start } from './cli';
+import info from './info';
 
-start();
+start({ info });
