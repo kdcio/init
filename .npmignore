@@ -1,0 +1,8 @@
+tests
+coverage
+src
+.gitsecret
+config
+stats.html
+babel.config.json
+rollup.config.js
