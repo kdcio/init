@@ -50,6 +50,7 @@
     "rollup-plugin-visualizer": "^4.1.1"
   },
   "dependencies": {
+    "command-exists": "^1.2.9",
     "commander": "^6.1.0",
     "execa": "^4.0.3"
   }

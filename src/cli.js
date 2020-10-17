@@ -2,7 +2,7 @@ import { program } from 'commander';
 import packageJson from '../package.json';
 const { log } = console;
 
-export const start = ({ info }) => {
+export const start = ({ info, run }) => {
   program
     .version(packageJson.version)
     .name(`npx ${packageJson.name}`)
@@ -10,7 +10,18 @@ export const start = ({ info }) => {
     .arguments('[package-name]')
     .option('-i, --info', 'print environment debug info')
     .action((name) => {
-      packageName = name;
+      if (program.info) {
+        log('\nEnvironment Info:');
+        log(
+          `\n  current version of ${packageJson.name}: ${packageJson.version}`
+        );
+        log(`  running from ${__dirname}`);
+        return info();
+      } else if (name) {
+        return run();
+      } else {
+        program.help();
+      }
     })
     .on('--help', () => {
       log('');
@@ -18,11 +29,4 @@ export const start = ({ info }) => {
       log(`  ${program.name()} project-name`);
     })
     .parse(process.argv);
-
-  if (program.info) {
-    log('\nEnvironment Info:');
-    log(`\n  current version of ${packageJson.name}: ${packageJson.version}`);
-    log(`  running from ${__dirname}`);
-    return info();
-  }
 };
