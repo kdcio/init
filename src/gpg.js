@@ -1,7 +1,5 @@
 import cmd from './cmd';
 
-const CMD = 'gpg';
-
 const install = async () => {
   try {
     await cmd('brew', ['list', 'gpg'], false);

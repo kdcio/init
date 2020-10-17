@@ -1,8 +1,9 @@
 import { program } from 'commander';
 import packageJson from '../package.json';
+
 const { log } = console;
 
-export const start = ({ info, run }) => {
+const start = ({ info, run }) => {
   program
     .version(packageJson.version)
     .name(`npx ${packageJson.name}`)
@@ -17,11 +18,11 @@ export const start = ({ info, run }) => {
         );
         log(`  running from ${__dirname}`);
         return info();
-      } else if (name) {
-        return run(name);
-      } else {
-        program.help();
       }
+      if (name) {
+        return run(name);
+      }
+      return program.help();
     })
     .on('--help', () => {
       log('');
@@ -30,3 +31,5 @@ export const start = ({ info, run }) => {
     })
     .parse(process.argv);
 };
+
+export default { start };

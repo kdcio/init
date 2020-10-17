@@ -1,5 +1,5 @@
-import { start } from './cli';
+import cli from './cli';
 import info from './info';
 import run from './run';
 
-start({ info, run });
+cli.start({ info, run });

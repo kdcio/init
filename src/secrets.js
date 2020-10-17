@@ -9,7 +9,7 @@ const install = async () => {
     await cmd('brew', ['list', 'git-secrets'], false);
     console.log('git-secrets already installed');
   } catch (error) {
-    return cmd('brew', ['install', 'git-secrets']);
+    await cmd('brew', ['install', 'git-secrets']);
   }
 };
 
