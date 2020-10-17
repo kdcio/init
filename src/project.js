@@ -1,4 +1,5 @@
 import fs from 'fs';
+import { resolve } from 'path';
 import pkg from './pkg';
 import cmd from './cmd';
 
@@ -9,6 +10,7 @@ const setup = async (name) => {
   }
   fs.mkdirSync(name);
   process.chdir(name);
+  const CUR_DIR = process.cwd();
 
   await cmd('git', ['init']);
   await cmd('npm', ['init', '-y']);
@@ -35,6 +37,15 @@ const setup = async (name) => {
   });
 
   pkg.mod(mods);
+
+  const src = resolve(`${PKG_DIR}`, `../Node.gitignore`);
+  const dest = `${CUR_DIR}/.gitignore`;
+  fs.copyFileSync(src, dest);
 };
 
-export default { setup };
+const commit = async () => {
+  await cmd('git', ['add', '.']);
+  await cmd('git', ['commit', '-m', 'initial commit']);
+};
+
+export default { setup, commit };
