@@ -8,6 +8,8 @@ const run = async (name) => {
   await secret.install();
   await secrets.install();
   await project.setup(name);
+  await secret.setup();
+  await secrets.setup();
 };
 
 export default run;
