@@ -11,6 +11,14 @@ Initialize KDC Projects with npm & git. Security included!
 4. Run ```npm init``` - Initialize npm project.
 5. Install husky and lint-staged - Enable git hooks to make use of [git-secrets](https://github.com/awslabs/git-secrets).
 
+## Prerequisites
+
+Please install the following before using:
+
+- [brew](https://brew.sh/)
+- [git](https://formulae.brew.sh/formula/git#default)
+- [node, npm & npx](https://formulae.brew.sh/formula/node@12#default)
+
 ## Usage
 
 ```bash
