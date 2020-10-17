@@ -32,7 +32,6 @@
     "kdcsoftware"
   ],
   "author": "Ian Dela Cruz <ian@kdcsoftware.com> (https://www.kdcsoftware.com)",
-  "private": "false",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.12.1",
