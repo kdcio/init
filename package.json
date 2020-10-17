@@ -4,7 +4,8 @@
   "description": "Initialize KDC Projects with npm & git. Security included!",
   "main": "dist/index.js",
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "Node.gitignore"
   ],
   "bin": {
     "kdc-init": "dist/index.js"
