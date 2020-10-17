@@ -16,9 +16,11 @@ const install = async () => {
 /**
  * git secrets --install
  * git secrets --register-aws
+ * add hooks
  */
 const setup = async () => {
-  await cmd('git', ['secrets', '--install']);
+  // Use husky to trigger
+  // await cmd('git', ['secrets', '--install']);
   await cmd('git', ['secrets', '--register-aws']);
 };
 
