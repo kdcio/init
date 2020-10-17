@@ -4,3 +4,4 @@ stats.html
 .gitsecret/keys/random_seed
 !*.secret
 config/prod.yml
+repo

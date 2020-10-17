@@ -18,7 +18,7 @@ export const start = ({ info, run }) => {
         log(`  running from ${__dirname}`);
         return info();
       } else if (name) {
-        return run();
+        return run(name);
       } else {
         program.help();
       }

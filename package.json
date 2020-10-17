@@ -17,7 +17,8 @@
     "secret:tell": "git secret tell",
     "secret:add": "git secret add",
     "secret:hide": "git secret hide",
-    "secret:show": "git secret reveal"
+    "secret:show": "git secret reveal",
+    "test": "rm -fR repo; node dist/index.js repo"
   },
   "keywords": [
     "init",
@@ -30,11 +31,7 @@
     "kdcio",
     "kdcsoftware"
   ],
-  "author": {
-    "name": "Ian Dela Cruz",
-    "email": "ian@kdcsoftware.com",
-    "url": "https://www.kdcsoftware.com"
-  },
+  "author": "Ian Dela Cruz <ian@kdcsoftware.com> (https://www.kdcsoftware.com)",
   "private": "false",
   "license": "MIT",
   "devDependencies": {
@@ -58,5 +55,16 @@
     "command-exists": "^1.2.9",
     "commander": "^6.1.0",
     "execa": "^4.0.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdcio/init.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kdcio/init/issues"
+  },
+  "homepage": "https://github.com/kdcio/init#readme"
 }
