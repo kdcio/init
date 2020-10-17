@@ -12,15 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-          registry-url: https://registry.npmjs.org
+          registry-url: 'https://registry.npmjs.org'
           scope: '@kdcio'
-      - name: Set GIT_USER
-        run: echo '::set-env name=GIT_USER::Ian'
-      - run: git config --global user.email $GIT_USER
-      - name: Set GIT_EMAIL
-        run: echo '::set-env name=GIT_EMAIL::ian@kdcsoftware.com'
-      - run: git config --global user.name $GIT_EMAIL
-      - run: npm ci
+      - run: npm install
       - run: npm run build
       - run: npm publish
         env:
