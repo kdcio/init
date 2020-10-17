@@ -13,4 +13,4 @@ const install = async () => {
   await cmd('brew', ['install', 'gpg']);
 };
 
-export default install;
+export default { install };

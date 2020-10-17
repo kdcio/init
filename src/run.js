@@ -1,7 +1,7 @@
 import gpg from './gpg';
 
 const run = async () => {
-  await gpg();
+  await gpg.install();
 };
 
 export default run;
