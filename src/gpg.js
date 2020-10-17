@@ -1,16 +1,15 @@
-import exists from './exists';
 import cmd from './cmd';
 
 const CMD = 'gpg';
 
 const install = async () => {
-  if (exists(CMD)) {
+  try {
+    await cmd('brew', ['list', 'gpg'], false);
     console.log('gpg already installed');
-    return;
+  } catch (error) {
+    console.log('Installing gpg...');
+    await cmd('brew', ['install', 'gpg']);
   }
-
-  console.log('Installing gpg...');
-  await cmd('brew', ['install', 'gpg']);
 };
 
 export default { install };
