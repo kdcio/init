@@ -2,6 +2,11 @@
 
 Initialize KDC Projects with npm & git. Security included!
 
+[![ver](https://img.shields.io/npm/v/@kdcio/init?style=flat-square)](https://www.npmjs.com/package/@kdcio/init)
+[![build](https://img.shields.io/github/workflow/status/kdcio/init/build?style=flat-square)](https://github.com/kdcio/init/actions?query=workflow%3Abuild)
+[![size](https://img.shields.io/bundlephobia/min/@kdcio/init?style=flat-square)](https://bundlephobia.com/result?p=@kdcio/init)
+[![license](https://img.shields.io/github/license/kdcio/init?style=flat-square)](https://github.com/kdcio/init/blob/master/LICENSE)
+
 ## Features
 
 0. Install [gpg](https://gnupg.org/) - Encrypt files using a public and a secret key identified by your email address.
