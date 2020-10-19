@@ -2,10 +2,7 @@
 
 Initialize KDC Projects with npm & git. Security included!
 
-[![ver](https://img.shields.io/npm/v/@kdcio/init?style=flat-square)](https://www.npmjs.com/package/@kdcio/init)
-[![build](https://img.shields.io/github/workflow/status/kdcio/init/build?style=flat-square)](https://github.com/kdcio/init/actions?query=workflow%3Abuild)
-[![size](https://img.shields.io/bundlephobia/min/@kdcio/init?style=flat-square)](https://bundlephobia.com/result?p=@kdcio/init)
-[![license](https://img.shields.io/github/license/kdcio/init?style=flat-square)](https://github.com/kdcio/init/blob/master/LICENSE)
+[![ver](https://img.shields.io/npm/v/@kdcio/init)](https://www.npmjs.com/package/@kdcio/init) [![build](https://img.shields.io/github/workflow/status/kdcio/init/build)](https://github.com/kdcio/init/actions?query=workflow%3Abuild) [![size](https://img.shields.io/bundlephobia/min/@kdcio/init)](https://bundlephobia.com/result?p=@kdcio/init) [![Known Vulnerabilities](https://snyk.io/test/github/kdcio/init/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kdcio/init?targetFile=package.json) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=kdcio_init&metric=alert_status)](https://sonarcloud.io/dashboard?id=kdcio_init) [![license](https://img.shields.io/github/license/kdcio/init)](https://github.com/kdcio/init/blob/master/LICENSE)
 
 ## Features
 
